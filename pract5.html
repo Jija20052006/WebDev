@@ -1,115 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <h3>Name: Jija Kumbhojkar</h3>
-    <h3>Roll No: 28</h3>
-    <h3>Branch: CSE(A)</h3>
+<html lang="en">
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Image Tag Implementation</title>
+
+    <title>Adding Images in Webpage</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
             padding: 20px;
         }
 
         h1 {
             text-align: center;
+            color: darkblue;
         }
 
-        .box {
-            border: 3px solid #333;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 10px;
+        .student-info {
             background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #444;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border: 2px solid #555;
         }
 
         img {
-            border: 2px solid #555;
+            border: 2px solid black;
             border-radius: 8px;
             margin-top: 10px;
             max-width: 100%;
-            height: auto;
         }
 
-        .responsive {
+        .responsive-img {
             width: 100%;
             height: auto;
         }
 
-        .animate {
-            width: 200px;
+        .hover-img {
+            width: 250px;
             transition: transform 0.5s;
         }
 
-        .animate:hover {
-            transform: scale(1.2);
+        .hover-img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #444;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Image Tags Example</h1>
-
-    <div class="box">
-        <h2>1. Standard Image Tag (&lt;img&gt;)</h2>
-        <img src="images/Standard image tag.png"
-             alt="Standard Image Example">
+    <div class="student-info">
+        <h3>Name: Jija Kumbhojkar</h3>
+        <h3>Roll No: Your 28</h3>
+        <h3>Branch: CSE</h3>
     </div>
 
-    <div class="box">
-        <h2>2. Image with Caption (&lt;figure&gt; &amp; &lt;figcaption&gt;)</h2>
+    <h1>Demonstration of Adding Images in Webpage</h1>
+
+    <!-- 1. Simple Image -->
+    <div class="section">
+        <h2>1. Simple Image using &lt;img&gt; Tag</h2>
+
+        <img src="https://picsum.photos/400/250"
+             alt="Simple Image Example">
+    </div>
+
+    <!-- 2. Image with Caption -->
+    <div class="section">
+        <h2>2. Image with Caption</h2>
+
         <figure>
-            <img src="images/Image with Caption.png"
-                 alt="Image with Caption Example">
-            <figcaption>This is an example of an image with caption.</figcaption>
+            <img src="https://picsum.photos/450/250"
+                 alt="Nature Image">
+
+            <figcaption>
+                Beautiful scenery image with caption.
+            </figcaption>
         </figure>
     </div>
- 
-    <div class="box">
-        <h2>3. Responsive Image (&lt;img class="responsive"&gt;)</h2>
-        <img src="images/Responsive Tag.png"
-             alt="Responsive Image Example"
-             class="responsive">
+
+    <!-- 3. Responsive Image -->
+    <div class="section">
+        <h2>3. Responsive Image</h2>
+
+        <img src="https://picsum.photos/800/300"
+             alt="Responsive Image"
+             class="responsive-img">
     </div>
 
-    <div class="box">
-        <h2>4. Image as a Link (&lt;a&gt; + &lt;img&gt;)</h2>
-        <a href="https://www.google.com" target="_blank">
-            <img src="images/Image as a link.png"
+    <!-- 4. Clickable Image -->
+    <div class="section">
+        <h2>4. Clickable Image</h2>
+
+        <a href="https://www.google.com"
+           target="_blank">
+
+            <img src="https://picsum.photos/300/200"
                  alt="Clickable Image">
         </a>
+
+        <p>Click the image to open Google.</p>
     </div>
 
-    <div class="box">
-        <h2>5. Animated Image (GIF &amp; CSS Animation)</h2>
+    <!-- 5. Animated Hover Image -->
+    <div class="section">
+        <h2>5. Hover Animation on Image</h2>
 
-        <p><strong>Animated GIF:</strong></p>
+        <img src="https://picsum.photos/250/200"
+             alt="Animated Hover Image"
+             class="hover-img">
+    </div>
+
+    <!-- 6. GIF Image -->
+    <div class="section">
+        <h2>6. GIF Image</h2>
+
         <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif"
-             alt="Animated GIF"
-             width="200">
-    </div>
-
-    <div class="box">
-        <h2>6. Image Map (&lt;map&gt; &amp; &lt;area&gt;)</h2>
-        <img src="images/image maps.png"
-             alt="Image Map Example"
-             usemap="#imagemap">
-
-        <map name="imagemap">
-            <area shape="rect" coords="0,0,200,200"
-                  href="https://www.google.com"
-                  alt="Left Side">
-            <area shape="rect" coords="200,0,400,200"
-                  href="https://www.wikipedia.org"
-                  alt="Right Side">
-        </map>
+             alt="GIF Image"
+             width="250">
     </div>
 
 </body>
+
 </html>
