@@ -1,0 +1,8 @@
+{
+  "name": "web-dev-live-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "live": "npx live-server --open=frames.html --port=5500"
+  }
+}
