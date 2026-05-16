@@ -5,7 +5,7 @@
   <html>
   <body>
   <h2>My CD Collection</h2>  
-  <xsl:apply-templates/>  
+  <xsl:apply-templates select="catalog/cd"/> 
   </body>
 </html>
 </xsl:template>
